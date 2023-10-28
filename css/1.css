@@ -1,0 +1,56 @@
+/* Custom CSS for square options with images */
+.product .form-group {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.product .form-group:last-child {
+    margin-right: 0;
+}
+
+.product .form-group label {
+    display: block;
+}
+
+.product .form-control {
+    display: none;
+}
+
+/* Style for the square option boxes */
+.option-box {
+    display: inline-block;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    text-align: center;
+    line-height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 5px; /* Adjust the spacing as needed */
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+
+.option-box.selected {
+    background-color: #007bff; /* Change to your desired highlight color */
+    color: #fff;
+}
+
+/* Style for the image */
+.option-image {
+    width: 50px; /* Adjust the image width as needed */
+    height: 50px; /* Adjust the image height as needed */
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+}
+/* Highlighted button on click with a thicker blue outline */
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+    background-color: #007bff; /* Background color when clicked */
+    border: 2px solid #007bff; /* Thicker blue outline when clicked */
+    color: #fff; /* Text color when clicked */
+    transform: scale(1.05); /* Slightly bigger size when clicked */
+    transition: transform 0.2s, border 0.2s; /* Smooth transition */
+}
